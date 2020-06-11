@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"markdownlint.ignore": [
+			"Instructions.md"
+		],
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#ae5f14",
+			"activityBar.activeBorder": "#17c86d",
+			"activityBar.background": "#ae5f14",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#17c86d",
+			"activityBarBadge.foreground": "#15202b",
+			"statusBar.background": "#80460f",
+			"statusBar.border": "#80460f",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#ae5f14",
+			"titleBar.activeBackground": "#80460f",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.border": "#80460f",
+			"titleBar.inactiveBackground": "#80460f99",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "#80460f"
+	},
+}
