@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "test": "jest",
+    "start": "node src/index.js",
+    "test": "jest . --watch",
     "lint": "eslint .",
-    "dev": "nodemon index.js"
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
     "chalk": "^4.1.0"

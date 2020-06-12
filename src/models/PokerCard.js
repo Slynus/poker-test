@@ -12,11 +12,31 @@ class PokerCard {
         if (cardString.length !== 2) { throw new Error('Bad Card Syntax'); }
         if (!possibleValues.includes(cardString[0]) || !possibleSuits.includes(cardString[1])) { throw new Error('Card not existing'); }
 
-        this.card = {
-            value: cardString[0],
-            suit: cardString[1]
-        };
+        this.value = cardString[0];
+        this.suit = cardString[1];
+    }
 
+    compareWith(card) {
+        if (!(card instanceof PokerCard)) { throw new Error('Not a Poker Card'); }
+
+        if (this.value === card.value) { return 3; }
+
+        if (possibleValues.indexOf(this.value) > possibleValues.indexOf(card.value)) {
+            return 1;
+        }
+        else {
+            return 2;
+        }
+    }
+
+    isSameCard(card) {
+        if (!(card instanceof PokerCard)) { throw new Error('Not a Poker Card'); }
+
+        if (this.value === card.value && this.suit === card.suit) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
