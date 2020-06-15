@@ -2,7 +2,7 @@
 
 ## Available Scripts
 
-J'ai choisi d'utiliser du nodeJS pour cet exercice. il vous faut donc un runtime nodeJS.
+J'ai choisi d'utiliser du nodeJS pour cet exercice. il vous faut donc un runtime nodeJS, version 11.0.0 ou plus récent.
 
 ### `npm install`
 
