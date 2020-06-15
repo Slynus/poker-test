@@ -5,9 +5,6 @@ test('Can create Poker Card', () => {
     const cardA = new PokerCard('AS');
     expect(cardA.value).toBe('A');
     expect(cardA.suit).toBe('S');
-
-    // more expect
-    //   expect(obj.a).toBe(1);
 });
 
 test('Can not create Poker Card, card String is falsy', () => {
@@ -72,11 +69,21 @@ test('Can not compare Poker cards, Card compared is not a card', () => {
     expect(() => cardA.compareWith({})).toThrowError('Not a Poker Card');
 });
 
-test('Card is same', ()=>{
+test('Card is same', () => {
     const cardA = new PokerCard('KS');
     const cardB = new PokerCard('KS');
     const cardC = new PokerCard('AD');
 
     expect(cardA.isSameCard(cardB)).toBe(true);
     expect(cardA.isSameCard(cardC)).toBe(false);
+});
+
+test('Get Value of Rank', () => {
+    const cardA = new PokerCard('AS');
+    const cardB = new PokerCard('TS');
+    const cardC = new PokerCard('2D');
+
+    expect(cardA.valueRank).toBe(12);
+    expect(cardB.valueRank).toBe(8);
+    expect(cardC.valueRank).toBe(0);
 });

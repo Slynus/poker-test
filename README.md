@@ -10,8 +10,8 @@ Installation des libs tierces. à lancer en premier
 
 ### `npm start`
 
-Demo interactive dans la console
+Demo dans la console
 
 ### `npm test`
 
-Lance le test runner en mode interactif
+Lance le test runner

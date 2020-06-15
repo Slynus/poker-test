@@ -5,7 +5,7 @@ class PokerCard {
 
     constructor(cardString) {
 
-        // Check for falsy values
+        // Check pour les valeur falsy
         if (!cardString) { throw new Error('No Card provided'); }
         if (typeof cardString !== 'string') { throw new TypeError(); }
 
@@ -16,6 +16,7 @@ class PokerCard {
         this.suit = cardString[1];
     }
 
+    // Compare une instance de carte avec une autre
     compareWith(card) {
         if (!(card instanceof PokerCard)) { throw new Error('Not a Poker Card'); }
 
@@ -29,6 +30,7 @@ class PokerCard {
         }
     }
 
+    // Verifie si la carte est indentique (valeur et couleur)
     isSameCard(card) {
         if (!(card instanceof PokerCard)) { throw new Error('Not a Poker Card'); }
 
@@ -39,6 +41,10 @@ class PokerCard {
         }
     }
 
+    // Donne la valeur indexée de la carte
+    get valueRank() {
+        return possibleValues.indexOf(this.value);
+    }
 }
 
 module.exports = PokerCard;
